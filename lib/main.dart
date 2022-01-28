@@ -32,13 +32,25 @@ class MyApp extends StatelessWidget {
         ],
         ),
       body: Column( children: [
-            const Text('Deji'),
+        const SizedBox(
+          width: 1400.0,
+          height: 200.0,
+          child: Card(child:Text('Colourful Summer Clothes are already in store',style:TextStyle(
+              fontFamily: '',
+              fontSize: 25,
+              color: Colors.black,
+              height: 2
+          ),textAlign: TextAlign.center,),
+
+          ),
+
+        ),
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(child:
                   Container(
-                    height: 400.0,
+                    height: 200.0,
                     padding: const EdgeInsets.all(8),
                     child: const RenderPopUp(),
                     color: Colors.grey[200],
@@ -46,7 +58,7 @@ class MyApp extends StatelessWidget {
                 ),
                 Expanded(child:
                   Container(
-                    height: 400.0,
+                    height: 200.0,
                     margin: const EdgeInsets.symmetric(horizontal: 20.0),
                     padding: const EdgeInsets.all(8),
                     child: const RenderPopUp(),
@@ -55,7 +67,19 @@ class MyApp extends StatelessWidget {
                 ),
               ]
             ),
-            const Text('Deji'),
+        const SizedBox(
+          width: 700.0,
+          height: 100.0,
+          child: Card(child:Text('Subscribe to Newsletter',style:TextStyle(
+              fontFamily: '',
+              fontSize: 25,
+              color: Colors.black,
+              height: 2
+          ),textAlign: TextAlign.center,),
+
+          ),
+
+        ),
       ],)
       )
     );
